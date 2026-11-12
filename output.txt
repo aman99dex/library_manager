@@ -1,0 +1,27 @@
+== 1. Borrowing ==
+Alice borrowed: Book: Python 101 by A. Rao (ID 1)
+Could not borrow: 'Python 101' is already borrowed by someone else.
+
+== 2. More error handling ==
+Bob borrowed: Magazine: Tech Monthly, issue 42 (ID 2)
+Could not borrow: Bob has reached the limit of 1 item(s).
+Could not return: Alice did not borrow 'Inception', so it cannot be returned.
+Alice has: ['Python 101']
+Bob has: ['Tech Monthly']
+Alice returned 'Python 101' 4 days late. Fee: Rs 8
+Alice has: []
+
+== 3. Polymorphism ==
+Book: Python 101 by A. Rao (ID 1) -> late fee for 3 days: Rs 6
+Magazine: Tech Monthly, issue 42 (ID 2) -> late fee for 3 days: Rs 3
+DVD: Inception, 148 min (ID 3) -> late fee for 3 days: Rs 15
+
+== 4. Class attribute ==
+Total items created: 3
+
+== 5. Encapsulation ==
+Direct access failed: 'Magazine' object has no attribute '__available'
+Using is_available() instead: False
+
+== 6. Abstract class ==
+Could not create LibraryItem: Can't instantiate abstract class LibraryItem without an implementation for abstract method 'late_fee'
